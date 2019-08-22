@@ -1,0 +1,53 @@
+Method name should be clear about what it DOES.
+E.g. convert_to_roman_numeral
+
+Test should be readable.
+
+"pretty print" formatting aids test readability:
+add the code to the top of the spec file
+check syntax
+
+Test example:
+describe "roman numeral converter"
+  it "returns 'I' when given 1" do
+    expect(convert_to_roman_numeral(1)).to eq('I')
+  end
+end
+
+describe "roman numeral converter"
+  it "returns 'II' when given 2" do
+    expect(convert_to_roman_numeral(2)).to eq('II')
+  end
+end
+
+'Black box testing' articulates the relationship between input and output.
+i.e. such a test compares the output with with input.
+
+Don't rush ahead when you should be letting the tests drive the code:
+Be disciplined, even when it means you will have to delete the passing code later.
+Example code to pass test for 2: note we have not used a hash yet:
+
+def convert_to_roman_numeral(number)
+  if number == 2
+    return "II"
+  end
+  "I"
+end
+
+Pattern(s) should visibly emerge as you build up the code.
+E.g. many lines of if statements.
+This should help with refactoring:
+E.g. writing if statement on one line, and using string interpolation.
+
+At some point, hard-coding may become unsustainable.
+In this case if you wanted the program to convert the first 100 numbers, a hash would take a long time to write.
+This begins a more algorithmic approach to creating the output.
+
+def convert_to_roman_numeral(number)
+  "I" * number
+  end
+end
+
+More about testing:
+You can set a variable within a test.
+It can be difficult to expose variables, so it's better to test their behaviour.
