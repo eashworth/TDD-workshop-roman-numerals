@@ -1,0 +1,26 @@
+Write story
+Init project:
+  Create project directory
+  Create git repo in project directory.
+  Create lib folder in project drectory.
+  Install rspec gem
+  Init rspec
+Write rspec test that requires program file and checks the program will output the expect value when a given argument is passed in.
+Run rspec and inspect errors.
+Create program file in lib.
+run rspec
+Create method
+run rspec.
+git status
+add
+commit
+Create remote
+Create Github repo
+Write readme
+push
+
+Problem statement:
+It takes a positive integer and coverts it into a string of the corresponding Roman numeral.
+Examples:
+It converts 1 to “I”
+It converts 2 to “II”
